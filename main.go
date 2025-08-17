@@ -30,7 +30,7 @@ func loginHandler(c *gin.Context) {
 		return
 	}
 
-	if loginData.Username == "agung" && loginData.Password == "1234" {
+	if loginData.Username == "fajar" && loginData.Password == "1234" {
 		c.JSON(http.StatusOK, gin.H{"status": "success", "message": "Login success"})
 	} else {
 		c.JSON(http.StatusUnauthorized, gin.H{"status": "error", "message": "Invalid credentials"})
