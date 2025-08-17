@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  simple-be-go:
+    build: .
+    container_name: simple-be-go
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
